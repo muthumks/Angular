@@ -1,0 +1,190 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{margin:0em;padding:0em;}
+body{
+background:black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: red;
+}
+
+
+/************** Header start ****************/
+header
+{
+display:table;
+min-width:100vw;
+height:2em;
+color:red;
+padding:1em;
+background:lightgray;
+text-align:right;
+}
+.bor
+{
+display:table-cell;
+border-radius:20px;
+width:230px;
+box-shadow:2px 10px 20px gray;
+transform:rotateX(20deg);
+}
+
+.bor:hover
+{
+transform:rotateX(0deg);
+box-shadow:2px 2px 10px gray;
+}
+
+
+.tt
+{
+display:table-cell;
+color:white;
+font-weight:normal;
+font-family:Algerian;
+font-size:265%;
+vertical-align:middle;
+text-shadow:8px 5px 5px black;
+padding-right:1em;
+}
+.tt:hover
+{
+text-shadow:8px 5px 5px gray;
+}
+/*header:hover
+{
+animation: 1s spin_f infinite;
+}
+@keyframes spin_f
+{
+0% {left:0px;}
+20% {left:50px; background-color: lightgreen;}
+40% {left:140px; background-color: lightgray;}
+60% {left:280px; background-color: lightyellow;}
+80% {left:425px; background-color: lightblue;}
+100% {left:0px; background-color: lightpink;}
+}
+*/
+.loader
+{
+position:relative;
+border:2px solid black;
+border-left-color:#fff;
+width:1.3em;
+border-radius:50%;
+padding:1px 0px;
+animation: 1s spin infinite;
+}
+.loader2
+{
+position:relative;
+border:2px solid black;
+border-left-color:#fff;
+width:1.3em;
+border-radius:50%;
+padding:1px 0px;
+animation: 1s spin_v infinite;
+}
+@keyframes spin
+{
+0%{transform:rotate(0deg);left:0px;}
+25%{transform:rotate(90deg);left:50px;}
+50%{transform:rotate(180deg);left:100px;}
+75%{transform:rotate(270deg);left:150px;}
+100%{transform:rotate(360deg);left:200px;}
+}
+@-webkit-keyframes spin
+{
+0%{transform:rotate(0deg);left:0px;}
+25%{transform:rotate(90deg);left:50px;}
+50%{transform:rotate(180deg);left:100px;}
+75%{transform:rotate(270deg);left:150px;}
+100%{transform:rotate(360deg);left:200px;}
+}
+@keyframes spin_v
+{
+0%{transform:rotate(0deg);left:200px;}
+25%{transform:rotate(-90deg);left:150px;}
+50%{transform:rotate(-180deg);left:100px;}
+75%{transform:rotate(-270deg);left:50px;}
+100%{transform:rotate(-360deg);left:10px;}
+}
+@-webkit-keyframes spin_v
+{
+0%{transform:rotate(0deg);left:10px;}
+25%{transform:rotate(-90deg);left:50px;}
+50%{transform:rotate(-180deg);left:100px;}
+75%{transform:rotate(-270deg);left:150px;}
+100%{transform:rotate(-360deg);left:200px;}
+}
+/************** Header End ****************/
+
+
+/************** Body Matter Start ****************/
+
+.bm{
+width:80%;
+margin: auto;
+padding:2em;
+background:white;
+box-shadow:1px 7px 10px gray;
+clear:both;
+min-height: 300px;
+}
+nav{
+    float:left;
+    clear:both;
+    width:20%;
+    margin:0em;
+    padding:0em;}
+ul
+{
+list-style-type:none;
+margin:0em;
+}
+.active{color: red;}
+li
+{
+background:lightgray;
+color:white;
+font-size:100%;
+margin:5px;
+padding:10px;
+}
+li:hover
+{
+background:lightgray;
+color:white;
+font-size:120%;
+box-shadow:0px 0px 20px black;
+}
+.col2
+{
+width:80%;
+padding-left:1em;
+display:tabel-cell;}
+h1{
+font-size:180%;
+color:gray;
+text-decoration:underline;
+margin-bottom:1em;
+}
+p{
+margin-bottom:5%;
+}
+
+/************** Body Matter End ****************/
+
+/************** Footer Start ****************/
+
+footer{
+padding-top:2em;
+color:white;
+text-align:center;
+}
+
+/************** Footer End ****************/

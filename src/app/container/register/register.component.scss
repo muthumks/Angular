@@ -1,0 +1,21 @@
+form {
+    &.active{
+        .ng-invalid{
+            border: 1px solid red; 
+        }
+}
+.value{
+    border: 1px solid  green;
+    border-radius: 3px;
+ }
+
+.form-element{
+        width: 400px;
+        margin: 10px;
+        .name { 
+            color: red;
+            width: 150px;
+            float: left;
+        }
+    }
+}

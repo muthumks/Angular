@@ -1,33 +1,33 @@
 <h1>User Detail</h1>
 
-<form action="/register" name="myForm" onsubmit="return(validate());">
-  <table cellspacing="2" cellpadding="2" border="1">
+<form [class]="submitted?'active':''">
+  <table cellspacing="2" cellpadding="2" border="0">
 
     <tr>
       <td align="right">Name</td>
       <td>
-        <input type="text" name="Name" required />
+        <input type="text" name="userName" required [(ngModel)] = "register.userName" class="value"/>
       </td>
     </tr>
 
     <tr>
       <td align="right">EMail</td>
       <td>
-        <input type="text" name="EMail" required/>
+        <input type="text" name="eMail" required [(ngModel)] = "register.eMail" class="value"/>
       </td>
     </tr>
 
     <tr>
       <td align="right">Zip Code</td>
       <td>
-        <input type="text" name="Zip" required/>
+        <input type="text" name="zipCode" required [(ngModel)] = "register.zipCode" class="value"/>
       </td>
     </tr>
 
     <tr>
       <td align="right">Country</td>
       <td>
-        <select name="Country">
+        <select required name="country" [(ngModel)] = "register.country" class="value">
           <option value="-1" selected>[choose yours]</option>
           <option value="1">USA</option>
           <option value="2">UK</option>
@@ -39,9 +39,12 @@
     <tr>
       <td align="right"></td>
       <td>
-        <input type="submit" (click)="register()" value="Submit" />
+        <input type='submit' (click)="signUp()" value="Sign Up" />
       </td>
     </tr>
 
   </table>
 </form>
+<div class='errorMsg' *ngIf="errrorMsgList">
+    <span *ngFor="let errorMsg of errrorMsgList">{{errorMsg}}</span>
+  </div>

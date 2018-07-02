@@ -1,3 +1,21 @@
-<p>
-  login works!
-</p>
+<h1>Login</h1>
+<form class="con">
+          <table>
+    <tr>
+      <td>User Id: </td>
+      <td><input type="text" required name="userName" placeholder="Ex. abc@def.com" [(ngModel)]='login.userName'/></td>
+    </tr>
+    <tr>
+        <td>Password: </td>
+        <td><input type="password" required name="password" [(ngModel)]='login.password'/></td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><input type='submit' (click)="signIn()" value="Sign In"/></td>
+        </tr>
+    
+    </table>
+</form>
+<div class='errorMsg' *ngIf="errrorMsgList">
+        <span *ngFor="let errorMsg of errrorMsgList">{{errorMsg}}</span>
+      </div>

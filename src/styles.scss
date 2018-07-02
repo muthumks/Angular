@@ -188,3 +188,17 @@ text-align:center;
 }
 
 /************** Footer End ****************/
+
+
+.errorMsg
+{
+    position: absolute;
+    left: 680px;
+    top: 185px;
+    color:red;
+}
+.errorMsg span
+{
+    display: block;
+    margin: 0%;
+ }
